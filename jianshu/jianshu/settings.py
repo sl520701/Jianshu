@@ -68,8 +68,8 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
    'jianshu.pipelines.MongoPipline': 300,
 }
-# MONGO_ADDRESS ='localhost'
-# MONGO_NAME = 'test'
+MONGO_ADDRESS ='localhost'
+MONGO_NAME = 'test'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
