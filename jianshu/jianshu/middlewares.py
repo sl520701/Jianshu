@@ -16,10 +16,10 @@ class SeleniumDownloadMiddleware():
         self.driver = webdriver.Chrome(options=self.options)
     def process_request(self,request,spider):
         self.driver.get(request.url)
-        time.sleep(3)
+        time.sleep(1)
         self.driver.execute_script('window.scrollTo(0,document.body.scrollHeight)')
         summitBtn = self.driver.find_element_by_class_name('btn log-in')
-        time.sleep(5)
+        time.sleep(2)
         summitBtn.click()
         source = self.driver.page_source
         # 把请求到source封装成一个response对象返回给引擎再给spider进行处理
