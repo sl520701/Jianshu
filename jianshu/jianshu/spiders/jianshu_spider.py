@@ -8,7 +8,7 @@ import time
 class JianshuSpiderSpider(CrawlSpider):
     name = 'jianshu_spider'
     allowed_domains = ['jianshu.com']
-    start_urls = ['https://www.jianshu.com']
+    start_urls = ['https://www.jianshu.com/p/5ed0a7ec99e2']
 
     rules = (
         Rule(LinkExtractor(allow=r'.+/p/[a-z0-9]+'), callback='parse_item', follow=True),
